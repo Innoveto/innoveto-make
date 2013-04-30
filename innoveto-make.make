@@ -1,25 +1,25 @@
- 
+
 ; Core version
 ; ------------
 ; Each makefile should begin by declaring the core version of Drupal that all
 ; projects should be compatible with.
-  
+
 core = 7.22
-  
+
 ; API version
 ; ------------
 ; Every makefile needs to declare its Drush Make API version. This version of
 ; drush make uses API version `2`.
-  
+
 api = 2
-  
+
 ; Core project
 ; ------------
 ; In order for your makefile to generate a full Drupal site, you must include
 ; a core project. This is usually Drupal core, but you can also specify
 ; alternative core projects like Pressflow. Note that makefiles included with
 ; install profiles *should not* include a core project.
-  
+
 ; Drupal 7.x. Requires the `core` property to be set to 7.x.
 projects[drupal][version] = 7.22
 
@@ -28,7 +28,7 @@ projects[drupal][version] = 7.22
 projects[innoveto][type] = "profile"
 projects[innoveto][download][type] = "file"
 projects[innoveto][download][url] = "https://github.com/Jbartsch/innoveto/archive/master.zip"
-  
+
 ; Modules
 ; --------
 projects[admin_menu][type] = "module"
@@ -69,23 +69,42 @@ projects[views_bulk_operations][type] = "module"
 projects[views_bulk_operations][subdir] = "contrib"
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
-projects[botcha][subdir] = contrib
-projects[coder][subdir] = contrib
-projects[coder_tough_love][subdir] = contrib
-projects[colorbox][subdir] = contrib
-projects[delta][subdir] = contrib
-projects[devel_themer][subdir] = contrib
-projects[entityreference_prepopulate][subdir] = contrib
-projects[flexslider][subdir] = contrib
-projects[imce][subdir] = contrib
-projects[moopapi][subdir] = contrib
-projects[og_extras][subdir] = contrib
-projects[omega_tools][subdir] = contrib
-projects[reroute_email][subdir] = contrib
-projects[rules][subdir] = contrib
-projects[simplehtmldom][subdir] = contrib
-projects[touch_icons][subdir] = contrib
-projects[variable][subdir] = contrib
+projects[botcha][type] = "module"
+projects[botcha][subdir] = "contrib"
+projects[coder][type] = "module"
+projects[coder][subdir] = "contrib"
+projects[coder_tough_love][type] = "module"
+projects[coder_tough_love][subdir] = "contrib"
+projects[colorbox][type] = "module"
+projects[colorbox][subdir] = "contrib"
+projects[delta][type] = "module"
+projects[delta][subdir] = "contrib"
+projects[devel_themer][type] = "module"
+projects[devel_themer][subdir] = "contrib"
+projects[entityreference_prepopulate][type] = "module"
+projects[entityreference_prepopulate][subdir] = "contrib"
+projects[flexslider][type] = "module"
+projects[flexslider][subdir] = "contrib"
+projects[imce][type] = "module"
+projects[imce][subdir] = "contrib"
+projects[moopapi][type] = "module"
+projects[moopapi][subdir] = "contrib"
+projects[og_extras][type] = "module"
+projects[og_extras][subdir] = "contrib"
+projects[omega_tools][type] = "module
+projects[omega_tools][subdir] = "contrib"
+projects[reroute_email][type] = "module"
+projects[reroute_email][subdir] = "contrib"
+projects[rules][type] = "module"
+projects[rules][subdir] = "contrib"
+projects[simplehtmldom][type] = "module"
+projects[simplehtmldom][subdir] = "contrib"
+projects[touch_icons][type] = "module"
+projects[touch_icons][subdir] = "contrib"
+projects[variable][type] = "module"
+projects[variable][subdir] = "contrib"
+projects[memcache][type] = "module"
+projects[memcache][subdir] = "contrib"
 
 ; Themes
 ; --------
@@ -108,5 +127,3 @@ libraries[colorbox][download][url] = "https://github.com/jackmoore/colorbox/arch
 libraries[flexslider][type] = "libraries"
 libraries[flexslider][download][type] = "file"
 libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/master.zip"
-
-
