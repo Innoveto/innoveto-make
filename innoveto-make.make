@@ -106,15 +106,25 @@ projects[variable][subdir] = "contrib"
 projects[memcache][type] = "module"
 projects[memcache][subdir] = "contrib"
 
+;Theme helpers
+; --------
+projects[navbar][type] = "module"
+projects[navbar][subdir] = "contrib"
+projects[views_bootstrap][type] = "module"
+projects[views_bootstrap][subdir] = "contrib"
+projects[panels_bootstrap_layouts][type] = "module"
+projects[panels_bootstrap_layouts][subdir] = "contrib"
+projects[panels_bootstrap_layout_builder][type] = "module"
+projects[panels_bootstrap_layout_builder][subdir] = "contrib"
+
 ; Themes
 ; --------
-projects[omega][version] = 3.1
-projects[omega][type] = "theme"
-projects[omega][subdir] = "contrib"
-projects[BootstrapBlocks][type] = "theme"
-projects[BootstrapBlocks][subdir] = "contrib"
-projects[BootstrapBlocks][download][type] = "file"
-projects[BootstrapBlocks][download][url] = "https://github.com/patrickocoffeyo/BootstrapBlocks/archive/master.zip"
+projects[boostrap][version] = 3.0
+projects[boostrap][type] = "theme"
+projects[boostrap][subdir] = "contrib"
+projects[ember][version] = 7.x-2.0-alpha2
+projects[ember][type] = "theme"
+projects[ember][subdir] = "contrib"
 
 ; Libraries
 ; ---------
